@@ -1,8 +1,7 @@
 const mongoose = require('mongoose')
-let link = 'mongodb://localhost:27017/API_SHOP'
  async function connect(){
     try{
-        await mongoose.connect(link,{
+        await mongoose.connect('mongodb://localhost:27017/API_SHOP',{
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
