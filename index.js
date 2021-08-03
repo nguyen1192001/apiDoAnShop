@@ -21,7 +21,7 @@ app.use('/product',checkUserAuth,productRoute)
 app.use('/user',checkUserAuth,productUser)
 app.use('/cart',checkUserAuth,productCart)
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
 });
