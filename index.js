@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const port = 4000
 const db  = require('./config')
 const productRoute = require('./Product')
 const productCart = require('./Cart')
@@ -18,9 +19,8 @@ app.use('/product',productRoute)
 app.use('/user',productUser)
 app.use('/cart',productCart)
 
-const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
-});
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
 
 
