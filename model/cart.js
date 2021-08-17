@@ -5,7 +5,7 @@ const Schema = mongoose.Schema
 const Cart = new Schema({
   '0': [
     {
-      id: { type: String, required: true },
+      id: { type: String},
       title: { type: String },
       price: { type: String },
       description: { type: String },
