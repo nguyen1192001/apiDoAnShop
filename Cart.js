@@ -11,6 +11,6 @@ router.post("/", async (req, res) => {
   const Cart = new cart(data)
   console.log("carttttttttttttttttttt",Cart)
   Cart.save()
-    .then((item) => res.json(item))
+    .then(() => res.json("ok"))
 });
 module.exports = router;
