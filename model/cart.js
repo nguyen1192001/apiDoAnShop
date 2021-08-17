@@ -10,7 +10,7 @@ const Cart = new Schema({
       price: { type: String },
       description: { type: String },
       category: { type: String },
-      img: { type: String },
+      image: { type: String },
     }
   ],
   '1': 

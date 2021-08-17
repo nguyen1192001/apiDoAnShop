@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
 })
 router.post("/", async (req, res) => {
   const data = req.body
-  console.log("data",data);
+  console.log("data",data)
   const Cart = new cart(data)
   console.log("carttttttttttttttttttt",Cart)
   Cart.save()

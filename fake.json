@@ -1,7 +1,7 @@
 
 [
     {
-      "id": 1,
+      "id": "1",
       "title": "Áo thun cổ tròn tay ngắn phong cách Hàn Quốc",
       "price": 109.95,
       "description": "Áo thun cổ tròn tay ngắn phong cách Hàn Quốc năng động trẻ trung cho nam-Dark gray",
@@ -9,7 +9,7 @@
       "image": "https://cf.shopee.vn/file/bfc7189a7526c6cd7504bf93f9b5dc01"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Mens Casual Premium Slim Fit T-Shirts ",
       "price": 22.3,
       "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
@@ -17,7 +17,7 @@
       "image": "https://cf.shopee.vn/file/43808ba9dfc4b5635ce5d0b4a5d36a89"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Áo Thun Tay Ngắn Thiết Kế Dáng Rộng",
       "price": 55.99,
       "description": "Áo Thun Tay Ngắn Thiết Kế Dáng Rộng Thời Trang Mùa Hè Dành Cho Nam-Black",
@@ -25,15 +25,15 @@
       "image": "https://cf.shopee.vn/file/e49320757a9979352c7f0ce989036224"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Kế Dáng Rộng Thời Trang",
       "price": 15.99,
       "description": "Kế Dáng Rộng Thời Trang Mùa Hè Dành Cho Nam-White",
       "category": "men's clothing",
-      "image": "le/5653a50bdcea9dc0ada0aac805bf66ce"
+      "image": "https://cf.shopee.vn/file/e49320757a9979352c7f0ce989036224"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Áo Thun Áo Phông Tay Lỡ",
       "price": 695,
       "description": "Áo Thun Áo Phông Tay Lỡ From rộng [CD] Unisex-Xanh",
@@ -41,7 +41,7 @@
       "image": "https://cf.shopee.vn/file/9d810861f34c96320794243a22ff3a1e"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Áo thun LAY BUST From rộng tay lỡ Unisex-Đen",
       "price": 168,
       "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
@@ -49,7 +49,7 @@
       "image": "https://cf.shopee.vn/file/6c55d72113b2e5178946af2daac02992"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Áo thun LAY BUST",
       "price": 9.99,
       "description": "Áo thun LAY BUST From rộng tay lỡ Unisex-Cam...",
@@ -57,7 +57,7 @@
       "image": "https://cf.shopee.vn/file/e0acb7c3129f279905b62946ed54f98a"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Áo thun LAY BUST From rộng tay lỡ Unisex-Trắng",
       "price": 10.99,
       "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
@@ -65,7 +65,7 @@
       "image": "https://cf.shopee.vn/file/abedc08389042d2269549946ecd1abd2"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Áo thun tay lỡ HAYO Unisex-Trắng",
       "price": 64,
       "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
@@ -73,7 +73,7 @@
       "image": "https://cf.shopee.vn/file/abedc08389042d2269549946ecd1abd2"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Áo thun tay lỡ HAYO Unisex-Đen",
       "price": 109,
       "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
@@ -81,7 +81,7 @@
       "image": "https://cf.shopee.vn/file/35be0959b0567c502fb081728f68f977"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Áo Thun tay lỡ in hình ( ANIMALS ) Unisex-Đỏ đô",
       "price": 109,
       "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
@@ -89,7 +89,7 @@
       "image": "https://cf.shopee.vn/file/b1cf3d51b610479f62e4a51d9df82942"
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Áo Thun tay lỡ in hình ( ANIMALS ) Unisex-Đen",
       "price": 114,
       "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
