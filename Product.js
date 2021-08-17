@@ -17,6 +17,17 @@ router.get('/:id', (req, res) => {
         .catch((err) => console.log(err))
 })
 
+router.post('/:_id', (req, res, next) => {
+   
+    console.log("body",req.body)
+    products.updateOne({ _id:req.params._id }, req.body)
+        .then((item) => res.json({
+            error:true,
+            item
+        }))
+        .catch(next)
+})
+
 
 router.post('/', (req, res) => {
     if (req.body.title == ""|| req.body.price == "" ||
@@ -40,14 +51,5 @@ router.delete('/:_id', (req, res) => {
 })
 
 
-router.post('/:_id', (req, res, next) => {
-   
-    console.log("body",req.body)
-    products.updateOne({ _id:req.params._id }, req.body)
-        .then((item) => res.json({
-            error:true,
-            item
-        }))
-        .catch(next)
-})
+
 module.exports = router;
