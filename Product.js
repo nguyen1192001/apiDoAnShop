@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     const id = req.params.id;
     console.log("fdsafgdsags",id)
-    products.findOne({id})
+    products.findOne({_id : id})
         .then((product) => {
             res.json(product)
         })
