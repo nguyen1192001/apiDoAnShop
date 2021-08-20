@@ -5,6 +5,7 @@ const db  = require('./config')
 const productRoute = require('./Product')
 const productCart = require('./Cart')
 const productUser = require('./Users')
+const productAdmin = require('./Admin')
 const cors = require('cors');
 // const authMiddleware = require('./middleware/authMiddleware')
 app.use(cors());
@@ -18,6 +19,7 @@ app.use(function(req, res, next) {
 app.use('/product',productRoute)
 app.use('/user',productUser)
 app.use('/cart',productCart)
+app.use('/admin',productAdmin)
 
 // app.listen(port, () => {
 //   console.log(`Example app listening at http://localhost:${port}`)
