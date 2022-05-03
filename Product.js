@@ -1,16 +1,20 @@
 const express = require('express')
-const products = require('./model/products')
+const sanpham = require('./model/sanpham')
+// const  = require('./config/index')
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    products.find({})
+    sanpham.find({})
         .then((item) => res.json(item))
+        .catch((err)=>{
+            console.log("error",err)
+        })
 })
 
 router.get('/:id', (req, res) => {
     const id = req.params.id;
     console.log("fdsafgdsags",id)
-    products.findOne({_id : id})
+    sanpham.findOne({_id : id})
         .then((product) => {
             res.json(product)
         })
@@ -20,7 +24,7 @@ router.get('/:id', (req, res) => {
 router.post('/:_id', (req, res, next) => {
    
     console.log("body",req.body)
-    products.updateOne({ _id:req.params._id }, req.body)
+    sanpham.updateOne({ _id:req.params._id }, req.body)
         .then((item) => res.json({
             error:true,
             item
@@ -36,7 +40,7 @@ router.post('/', (req, res) => {
             error:true
         })
     } else {
-        const product = new products(req.body)
+        const product = new sanpham(req.body)
         product.save()
             .then((product) => res.json(product))
             .catch(error => {
@@ -46,7 +50,7 @@ router.post('/', (req, res) => {
 
 })
 router.delete('/:_id', (req, res) => {
-    products.deleteOne({ _id: req.params._id })
+    sanpham.deleteOne({ _id: req.params._id })
         .then((item) => res.json(item))
 })
 

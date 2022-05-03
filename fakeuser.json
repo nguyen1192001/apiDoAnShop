@@ -1,18 +1,16 @@
 [
     {
         "email": "tranthaonguyen911@gmail.com",
-        "userName": "nguyen",
-        "password": "123",
-        "name": "thao nguyen",
-        "adress": "binh phuoc",
-        "phone": "0123456"
+        "matkhau": "123",
+        "tenkh": "thao nguyen",
+        "diachi": "binh phuoc",
+        "sdt": "0123456"
     },
     {
         "email": "nguyen119@gmail.com",
-        "userName": "nguyen",
-        "password": "123",
-        "name": "thao nguyen",
-        "adress": "binh phuoc",
-        "phone": "0123456"
+        "matkhau": "123",
+        "tenkh": "kieu tho",
+        "diachi": "binh phuoc",
+        "sdt": "0123456"
     }
 ]

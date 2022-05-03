@@ -1,16 +1,27 @@
 const express = require('express')
-const cart = require('./model/cart')
+const dondathang = require('./model/dondathang')
 const router = express.Router()
 router.get('/', (req, res) => {
-  cart.find({})
+  dondathang.find({})
     .then((item) => res.json(item))
 })
 router.post("/", async (req, res) => {
   const data = req.body
   console.log("data",data)
-  const Cart = new cart(data)
-  console.log("carttttttttttttttttttt",Cart)
-  Cart.save()
+  const Dondathang = new dondathang(data)
+  console.log("carttttttttttttttttttt",Dondathang)
+  Dondathang.save()
     .then(() => res.json("ok"))
 });
+
+router.post('/update', (req, res, next) => {
+   
+  console.log("don dat hangggggggg",req.body.madondathang , req.params)
+  dondathang.updateOne({ _id:req.body.madondathang }, req.body)
+      .then((item) => res.json({
+          error:true,
+          item
+      }))
+      .catch(next)
+})
 module.exports = router;

@@ -1,27 +1,32 @@
 const express = require('express')
-const users = require('./model/users')
+const khachhang = require('./model/khachhang')
+const diachi = require('./model/diachi')
 const router = express.Router()
 
 
 router.get('/', (req, res) => {
-    users.find({})
+    khachhang.find({})
+        .then((item) => res.json(item))
+})
+router.get('/adress', (req, res) => {
+    diachi.find({})
         .then((item) => res.json(item))
 })
 
 router.post('/', async (req, res) => {
     try {
-        let flag = await users.findOne({
+        let flag = await khachhang.findOne({
             email: req.body.email
         });
         if (!flag) {
             return res.json("khong ton tai")
         }
 
-        users.find({})
+        khachhang.find({})
         .then((item) => {
             item.map((e) => {
                 if (e.email == req.body.email) {
-                    if (e.password == req.body.password) {
+                    if (e.matkhau == req.body.password) {
                         return res.json({
                             error: false,
                             e
@@ -29,7 +34,7 @@ router.post('/', async (req, res) => {
                     }
                 }
                 if (e.email == req.body.email) {
-                    if (e.password != req.body.password) {
+                    if (e.matkhau != req.body.password) {
                         return res.json("mat khau sai")
                     }
                 }
@@ -42,8 +47,12 @@ router.post('/', async (req, res) => {
 })
 
 router.post('/register', async (req, res) => {
+    console.log("reqqqqqqqqq",req.body)
+    req.body.diachi = {quan : req.body.quan, dcchitiet:req.body.dcchitiet}
+    console.log("reqqqqqqqqq",req.body)
+    
     try {
-        let flag = await users.findOne({
+        let flag = await khachhang.findOne({
             email: req.body.email,
         });
         if (flag) {
@@ -51,7 +60,7 @@ router.post('/register', async (req, res) => {
                 error: true
             })
         }
-        const postUser = new users(req.body);
+        const postUser = new khachhang(req.body);
         await postUser.save();
         res.json({
             postUser

@@ -6,6 +6,9 @@ const productRoute = require('./Product')
 const productCart = require('./Cart')
 const productUser = require('./Users')
 const productAdmin = require('./Admin')
+const shipperRoute = require('./Shipper')
+const dcShippingRouter = require('./DocumentShipping')
+
 const cors = require('cors');
 // const authMiddleware = require('./middleware/authMiddleware')
 app.use(cors());
@@ -20,6 +23,9 @@ app.use('/product',productRoute)
 app.use('/user',productUser)
 app.use('/cart',productCart)
 app.use('/admin',productAdmin)
+app.use('/shipper',shipperRoute)
+app.use('/dcShiping',dcShippingRouter)
+
 
 // app.listen(port, () => {
 //   console.log(`Example app listening at http://localhost:${port}`)
