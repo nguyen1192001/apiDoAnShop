@@ -11,6 +11,7 @@ const dondathang = new Schema({
       mota: { type: String },
       maloai: { type: String },
       hinhanh: { type: String },
+      nhacc:{type:Object}
     }
   ],
   '1':

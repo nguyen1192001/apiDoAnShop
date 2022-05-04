@@ -1,0 +1,22 @@
+[
+    {
+        "email": "nhacc1@gmail.com",
+        "password": "123",
+        "tenncc": "tra sua nha lam",
+        "diachincc": {
+            "quan": "5",
+            "dcctiet": "vong xoay nguyen van cu"
+        },
+        "sdt": "0987878788"
+    },
+    {
+        "email": "nhacc2@gmail.com",
+        "password": "123",
+        "tenncc": "quan ban thit ga",
+        "diachincc": {
+            "quan": "3",
+            "dcctiet": "so 67 hoang hoa tham"
+        },
+        "sdt": "067687656678"
+    }
+]

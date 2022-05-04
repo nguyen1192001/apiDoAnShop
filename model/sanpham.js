@@ -7,7 +7,8 @@ const sanpham = new Schema({
   soluongcon:{ type: Number },
   gia: { type: Number },
   hinhanh:{type:String},
-  maloai:{type:String}
+  maloai:{type:String},
+  nhacc:{type:Object}
 }, {
   timestamps: true
 })

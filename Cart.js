@@ -9,14 +9,11 @@ router.post("/", async (req, res) => {
   const data = req.body
   console.log("data",data)
   const Dondathang = new dondathang(data)
-  console.log("carttttttttttttttttttt",Dondathang)
   Dondathang.save()
-    .then(() => res.json("ok"))
+  .then((item) => res.json(item))
 });
 
 router.post('/update', (req, res, next) => {
-   
-  console.log("don dat hangggggggg",req.body.madondathang , req.params)
   dondathang.updateOne({ _id:req.body.madondathang }, req.body)
       .then((item) => res.json({
           error:true,
